@@ -1,0 +1,26 @@
+{% extends '../base.html' %}
+
+
+{% block title %}Menu Page{% endblock %}
+
+
+{% block content %}
+<main>
+  <div class="conteiner px-5 pt-5 pb-5">
+      <div class="row">
+        {% for menu in menues %}
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="./img/italian.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                  <h5 class="card-title">{{menu.name}}</h5>
+                  <p class="card-text">{{menu.description}}</p>
+                  <a href="{% url 'dishes_page' slug=menu.slug %}" class="btn btn-danger">More</a>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+    </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends '../base.html' %}
+
+
+{% block title %}About Us Page{% endblock %}
+
+
+{% block content %}
+<main>
+  <div class="container">
+  <div class="conteiner px-5 pt-5 pb-5 text-center">
+          <main class="px-3">
+            <h1>Italiano's</h1>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead">
+              <a class="nav-link" href="{% url 'menu_page' %}">
+              <button type="button" class="btn btn-danger btn-lg px-4 gap-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Menu</font></font></button></a>
+            </p>
+          </main>
+        
+          <footer class="mt-auto text-white-50">
+            <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+          </footer>
+        </div>
+    </div>
+    </main>
+{% endblock %}

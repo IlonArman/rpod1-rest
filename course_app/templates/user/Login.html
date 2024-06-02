@@ -1,0 +1,36 @@
+{% extends '../base.html' %}
+
+
+{% block title %}Login Page{% endblock %}
+
+
+{% block content %}
+<div class="container pt-5 pb-5">
+
+<nav style="-bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+
+<ol class="breadcrumb">
+
+<li class="breadcrumb-item"><a href="#">Home</a></li>
+
+<li class="breadcrumb-item active" aria-current="page">Login</li>
+
+</ol>
+
+</nav>
+
+<h1 class="mb-5">Login</h1>
+
+<div class="card">
+
+<div class="card-body">
+    <form method="post">
+        {% csrf_token %}
+        {{form}}
+        <button class="btn btn-success">Login</button>
+    </form>
+
+
+</div></div>
+</div>
+{% endblock %}
